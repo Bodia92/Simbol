@@ -33,7 +33,23 @@
         
                     <p class="header__tagline">engineered for trust.</p>
         
-                    <a href="#contacts" class="header__btn btn">Contact us</a>
+                    <div class="header__actions">
+                        <div class="lang" data-lang>
+                            <button class="lang__current" type="button" aria-expanded="false" aria-controls="lang-list"
+                                aria-label="Language: English">
+                                EN
+                                <svg class="icon lang__arrow" aria-hidden="true"><use href="./assets/images/sprite.svg#icon-arrow-down"></use></svg>
+                            </button>
+                            <ul class="lang__list" id="lang-list">
+                                <li><a class="lang__item is-current" href="/" lang="en" aria-current="true">EN</a></li>
+                                <li><span class="lang__item is-disabled" lang="it" aria-disabled="true" title="Coming soon">IT</span></li>
+                                <li><span class="lang__item is-disabled" lang="fr" aria-disabled="true" title="Coming soon">FR</span></li>
+                                <li><span class="lang__item is-disabled" lang="de" aria-disabled="true" title="Coming soon">DE</span></li>
+                            </ul>
+                        </div>
+        
+                        <a href="#contacts" class="header__btn btn">Contact us</a>
+                    </div>
                 </div>
             </div>
         </header>
@@ -89,9 +105,11 @@
                 <div class="hero__container">
                     <h1 class="hero__title title title--inverse" data-anim="words">The platform that connects the government and citizens on all levels</h1>
             
-                    <div class="hero-utp" data-anim="blur-up" data-anim-delay="0.3">
-                        <p class="hero-utp__title">Essential services within one infrastructure</p>
-                        <p class="hero-utp__text">Seamless work across all systems saves time, resources and switching costs.</p>
+                    <div class="hero-utp" data-hero-utp data-anim="blur-up" data-anim-delay="0.3">
+                        <div class="hero-utp__slide is-active">
+                            <p class="hero-utp__title">Essential services within one infrastructure</p>
+                            <p class="hero-utp__text">Seamless work across all systems saves time, resources and switching costs.</p>
+                        </div>
                     </div>
             
                     <div class="hero-carousel" data-hero-carousel data-delay="5000" data-anim="blur-up" data-anim-delay="0.35">
